@@ -1,6 +1,6 @@
 {
   "name": "simple-modal-wh",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "simple modal designable",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
