@@ -5,12 +5,12 @@ const ModalComp = styled.div`
   display: block;
   height: 100vh;
   overflow: hidden;
-  background-color: #00000025;
+  background-color: #00000055;
   background-color: ${(props) => props.bckg};
 `
 
 const ModalMsg = styled.div`
-  width: 40rem;
+  width: 20rem;
   height: 15rem;
   border-radius: 1rem;
   background-color: #009879;

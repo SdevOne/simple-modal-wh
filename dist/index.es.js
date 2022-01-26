@@ -5,7 +5,7 @@ import e from"react";import o from"styled-components";const t=o.div`
   background-color: #00000025;
   background-color: ${e=>e.bckg};
 `,r=o.div`
-  width: 40rem;
+  width: 20rem;
   height: 15rem;
   border-radius: 1rem;
   background-color: #009879;

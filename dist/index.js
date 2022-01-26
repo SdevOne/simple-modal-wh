@@ -5,7 +5,7 @@
   background-color: #00000025;
   background-color: ${e=>e.bckg};
 `,a=l.default.div`
-  width: 40rem;
+  width: 20rem;
   height: 15rem;
   border-radius: 1rem;
   background-color: #009879;
