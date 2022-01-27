@@ -1,9 +1,9 @@
-import React, {useState} from "react"
+import React from "react"
 import styled from "styled-components"
 import "./modal.css"
 
 const ModalComp = styled.div`
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   background-color: #00000050;
   background-color: ${(props) => props.bckg};
@@ -22,7 +22,7 @@ const ModalMsg = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color:#fff;
+  color: #fff;
   color: ${(props) => props.color};
 `
 const CrossBtn = styled.button`
@@ -38,24 +38,35 @@ const CrossBtn = styled.button`
     cursor: pointer;
   }
 `
+/**
+ * Return a modal
+ * @param {string} message - message to display in the modal
+ * @param {string} background - overlay background color
+ * @param {string} txtBackground - message container background color
+ * @param {string} txtcolor - message color
+ * @param {boolean} showModal - state of the modal
+ * @param {boolean} message - function to change the state of the modal
+ * @returns {React.ReactElement}
+ */
 export const Modal = ({
   message,
   background,
   txtBackground,
   txtColor,
+  showModal,
+  updateModalState,
 }) => {
-  const [isOpen,setIsOpen] = useState(false)
-  const showModal = "modalElement display-block"
-  const hideModal = "modalElement display-none"
-  const handleModal = isOpen ? hideModal : showModal
-  return (
-    <div id={handleModal}>
-      <ModalComp bckg={background}>
-        <ModalMsg color={txtColor} txtBckg={txtBackground}>
-          {message}
-          <CrossBtn onClick={setIsOpen(true)}>x</CrossBtn>
-        </ModalMsg>
-      </ModalComp>
-    </div>
-  )
+  if (showModal) {
+    return (
+      <div id="modal">
+        <ModalComp bckg={background}>
+          <ModalMsg color={txtColor} txtBckg={txtBackground}>
+            {message}
+            <CrossBtn onClick={updateModalState}>x</CrossBtn>
+          </ModalMsg>
+        </ModalComp>
+      </div>
+    )
+  }
+  return null
 }

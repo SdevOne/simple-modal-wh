@@ -1,10 +1,4 @@
-#modalElement{
-    position: absolute;
-    overflow: hidden;
-}
-.display-block{
-    display: block;
-}
-.display-none{
-    display: none;
+#modal {
+  position: absolute;
+  overflow: hidden;
 }
