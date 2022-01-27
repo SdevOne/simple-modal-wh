@@ -49,7 +49,7 @@ const CrossBtn = styled.button`
  * @param {string} txtBackground - message container background color
  * @param {string} txtcolor - message color
  * @param {boolean} showModal - state of the modal
- * @param {boolean} message - function to change the state of the modal
+ * @param {boolean} updateModalState - function to change the state of the modal
  * @returns {React.ReactElement}
  */
 export const Modal = ({
