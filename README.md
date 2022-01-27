@@ -1,6 +1,7 @@
 # simple-modal-wh
 
 A simple modal designable created using `react`.
+
 npm link : [simple-modal-wh](https://www.npmjs.com/package/simple-modal-wh)
 
 ## Installation
@@ -12,9 +13,9 @@ or
 
 ## Using the modal
 
-You can also modify the modal design by adding 4 property :
+You can modify the modal with this props :
 
-<Modal showModal="false" updateModalState={callBack} message="Hello world" background="#000000" txtBackground="#fff025" txtColor="#ffffff"/>
+`<Modal showModal="false" updateModalState={callBack} message="Hello world" background="#000000" txtBackground="#fff025" txtColor="#ffffff"/>`
 
 - showModal: State of the modal to allow the opening
 - updateModalState: The function to change the state of the modal to allow opening and closing
