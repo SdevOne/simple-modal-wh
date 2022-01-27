@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Modal = styled.div`
+const ModalContainer = styled.div`
   position: absolute;
   overflow: hidden;
 `
@@ -62,14 +62,14 @@ export const Modal = ({
 }) => {
   if (showModal) {
     return (
-      <Modal>
+      <ModalContainer>
         <ModalComp bckg={background}>
           <ModalMsg color={txtColor} txtBckg={txtBackground}>
             {message}
             <CrossBtn onClick={updateModalState}>x</CrossBtn>
           </ModalMsg>
         </ModalComp>
-      </Modal>
+      </ModalContainer>
     )
   }
   return null
